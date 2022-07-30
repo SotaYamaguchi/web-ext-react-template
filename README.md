@@ -12,25 +12,25 @@ Following examples are for `yarn`. For `npm`, please translate by yourself.
 Firefox:
 
 ```
-yarn run build:firefox
+npm run build:firefox
 ```
 
 With watch mode:
 
 ```
-yarn run build:firefox --watch
+npm run build:firefox --watch
 ```
 
 Enable source map:
 
 ```
-yarn run build:firefox --dev
+npm run build:firefox --dev
 ```
 
 Chrome:
 
 ```
-yarn run build:chrome
+npm run build:chrome
 ```
 
 Build for both browsers:
@@ -44,19 +44,19 @@ yarn build
 Firefox:
 
 ```
-yarn run run:firefox
+npm run run:firefox
 ```
 
 Chrome
 
 ```
-yarn run run:chrome
+npm run run:chrome
 ```
 
 ### Create a package for Firefox (zip)
 
 ```
-yarn run package:firefox
+npm run package:firefox
 ```
 
 To install an unsigned add-on, you must use Firefox Developer Edition.
@@ -65,13 +65,13 @@ https://support.mozilla.org/en-US/kb/add-on-signing-in-firefox
 ### ESLint
 
 ```
-yarn run eslint . --ext .js,.jsx,.ts,.tsx
+npm run eslint . --ext .js,.jsx,.ts,.tsx
 ```
 
 ### Prettier
 
 ```
-yarn run prettier --write .
+npm run prettier --write .
 ```
 
 ## Customization
