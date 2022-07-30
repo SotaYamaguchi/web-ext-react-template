@@ -1,5 +1,6 @@
 import * as chokidar from 'chokidar';
 import { build, BuildOptions } from 'esbuild';
+import {sassPlugin} from 'esbuild-sass-plugin'
 import { promises as fs } from 'fs';
 import path from 'path';
 
@@ -133,6 +134,9 @@ export class Builder {
       build({
         entryPoints: [file],
         bundle: true,
+        plugins: [sassPlugin({
+          type: "css-text",
+        })],
         outdir: distPath(path.dirname(file), targetBrowser),
         watch: this.watchOption(targetBrowser),
         sourcemap: this.devFlag ? 'inline' : false,

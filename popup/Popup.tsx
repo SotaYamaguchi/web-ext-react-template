@@ -7,5 +7,8 @@ export const Popup: React.VFC = () => {
   };
 
   // a button to open example.com
-  return <button onClick={handleClick}>Button</button>;
+  return <div>
+    <h1>hello world!</h1>
+    <button onClick={handleClick}>Button</button>
+  </div>;
 };
