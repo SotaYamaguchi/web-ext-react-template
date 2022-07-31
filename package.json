@@ -3,20 +3,22 @@
   "version": "1.0.2",
   "private": true,
   "scripts": {
-    "build": "ts-node -T build.ts --firefox --chrome",
-    "build:firefox": "ts-node -T build.ts --firefox",
-    "build:chrome": "ts-node -T build.ts --chrome",
+    "build": "ts-node -T src/build.ts --firefox --chrome",
+    "build:firefox": "ts-node -T src/build.ts --firefox",
+    "build:chrome": "ts-node -T src/build.ts --chrome",
     "run:firefox": "web-ext run -s dist-firefox",
     "run:chrome": "web-ext run -s dist-chrome -t chromium",
     "package:firefox": "web-ext build -s dist-firefox --overwrite-dest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx && prettier --write .",
+    "lint:ts": "tsc --noEmit",
     "prepare": "husky install",
     "commit": "lint-staged -v"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "bash -c 'npm run lint:fix'"
+      "bash -c 'npm run lint:fix'",
+      "bash -c 'npm run lint:ts'"
     ]
   },
   "dependencies": {

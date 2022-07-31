@@ -6,8 +6,8 @@ const chromeFlag = process.argv.includes('--chrome');
 const firefoxFlag = process.argv.includes('--firefox');
 
 const builder = new Builder({ watchFlag, devFlag, chromeFlag, firefoxFlag });
-builder.addBuildFile('popup/index.tsx');
-builder.addStaticFile('popup/popup.html');
+builder.addBuildFile('src/popup/index.tsx');
+builder.addStaticFile('src/popup/popup.html');
 builder.addStaticDir('icons');
 
 builder.build();
