@@ -1,5 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 import browser from 'webextension-polyfill';
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
 
 export const Popup: React.VFC = () => {
   const handleClick = () => {
@@ -7,5 +19,10 @@ export const Popup: React.VFC = () => {
   };
 
   // a button to open example.com
-  return <button onClick={handleClick}>Button</button>;
+  return (
+    <Wrapper>
+      <Title>Hello World!</Title>
+      <button onClick={handleClick}>Button</button>
+    </Wrapper>
+  );
 };
