@@ -36,7 +36,7 @@ npm run build:chrome
 Build for both browsers:
 
 ```
-yarn build
+npm run build
 ```
 
 ### Run with browsers
