@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "es2016",
-    "jsx": "react",
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
     "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
