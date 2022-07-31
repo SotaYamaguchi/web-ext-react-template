@@ -62,18 +62,6 @@ npm run package:firefox
 To install an unsigned add-on, you must use Firefox Developer Edition.
 https://support.mozilla.org/en-US/kb/add-on-signing-in-firefox
 
-### ESLint
-
-```
-npm run eslint . --ext .js,.jsx,.ts,.tsx
-```
-
-### Prettier
-
-```
-npm run prettier --write .
-```
-
 ## Customization
 
 ### Change Add-on ID for Firefox

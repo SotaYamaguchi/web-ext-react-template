@@ -8,7 +8,9 @@
     "build:chrome": "ts-node -T build.ts --chrome",
     "run:firefox": "web-ext run -s dist-firefox",
     "run:chrome": "web-ext run -s dist-chrome -t chromium",
-    "package:firefox": "web-ext build -s dist-firefox --overwrite-dest"
+    "package:firefox": "web-ext build -s dist-firefox --overwrite-dest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx && prettier --write ."
   },
   "dependencies": {
     "esbuild": "^0.14.51",
